@@ -12,4 +12,3 @@ elif score > 60:
     print("B")
 else:
     print("C")
-
