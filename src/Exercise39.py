@@ -19,12 +19,14 @@ input_arr = bubblesort([random.randint(0, 9) for i in range(0, 10)])
 
 print(input_arr)
 insert_value = int(input("num:"))
-
 len_origin = len(input_arr)
-for i in range(len(input_arr) - 1):
+
+for i in range(0, len_origin - 1):
     if input_arr[i] != input_arr[i + 1] and (input_arr[i] - insert_value) * (input_arr[i + 1] - insert_value) <= 0:
         input_arr.insert(i + 1, insert_value)
         break
 
-if
-    print(input_arr)
+if len_origin == len(input_arr):
+    input_arr.append(insert_value)
+
+print(input_arr)
